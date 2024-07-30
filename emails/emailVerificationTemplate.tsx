@@ -120,7 +120,7 @@ const lowerSection = {
 const footerText = {
     ...text,
     fontSize: "12px",
-    textAlign: "center",
+    textAlign: "center" as const, // Ensure this is a valid TextAlign value
     padding: "10px 0",
 };
 
@@ -145,7 +145,7 @@ const validityText = {
 
 const verificationSection = {
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column" as const, // Ensure this is a valid FlexDirection value
     alignItems: "center",
 };
 
